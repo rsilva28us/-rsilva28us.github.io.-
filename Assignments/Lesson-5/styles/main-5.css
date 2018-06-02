@@ -9,13 +9,23 @@ body {
 }
 @media only screen and (min-width: 1024px)
 {
+    header {
+    padding: .5rem 2%;
+    background-color: #ddd;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+header figure.logo {
+    float: left;
+    margin: 0 2% 0 0;
+}
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
   max-width: 37.5em; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
     font-family: fantasy;
+    
 }
-.container {
-  position: relative;
-}
+
+
 nav {
   position: absolute;
   left: 0px;
