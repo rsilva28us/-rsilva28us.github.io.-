@@ -11,9 +11,13 @@
      <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Cinzel|Cutive|Josefin+Slab|Sanchez">
 </head>
+    
+    
 <body>
 
-<header class=" clearfix">
+<!-- HEADER-->
+    
+    <header class=" clearfix">
         <figure class="logo">
             <img src="images/logoweatheroriginal.png" alt="logo " srcset="images/logoweather1.png 1x, images/logoweather2.png 2x, images/logoweather3.png 3x">
         </figure>
@@ -21,11 +25,13 @@
         <div class="subheading"></div>
         <h2>Franklin City Weather</h2>
     </header>
-
-  <nav>
-    <ul>
+    
+<!-- NAVIGATION-->
+  <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
     	<li><a href="#">Home</a></li>
-    	<li><a href="#">Franklin</a></li>
+    	<li class="active"><a href="#">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
     	<li><a href="#">Springfield</a></li>
     	<li><a href="#">Storm Center</a></li>
@@ -33,21 +39,43 @@
     </ul>		
   </nav>
     
-  <main>
-    <h2>The Weather</h2>
-    <figure>
-    </figure>
-    <section class="weather-summary">
-      <h3>Weather Summary</h3>    
+    <!-- MAIN-->
+  <main class="clearfix">
+    <div class="main">
+      <h2>Franklin</h2>
+      <h5>Weather</h5>
+             <figure class="franklinphoto">
+                <img src= "images/franklin-original1028.jpg" sizes="50vw" 
+                    srcset= "images/franklin200.jpg 200w,
+                     images/franklin500.jpg 500w,
+                     images/franklin800.jpg 800w,
+                     images/franklin1100.jpg 1100w,">
+                <figcaption>Franklin</figcaption>
+            </figure>
+      
+      <p>The most beautiful city of the State</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <br>
+           <br>
+
+      <h2>Forecast</h2>
+            
+        <section class="franklin">
+            <h3>Weather Summary</h3>    
       <div class="highlow">
         <p>High:</p>  
         <p>Low:</p>  
       </div>
       <div class="current">
-        Sunny
-        <picture>
-            <img src="images/sunny100.jpg" alt="Sunny day">
-        </picture>
+          <figure class="sunnyphoto">
+      <img src= "images/sunny100.jpg" sizes="50vw" 
+            srcset= "images/sunny200.jpg 200w,
+                     images/sunny500.jpg 500w,
+                     images/sunny800.jpg 800w,
+                     images/sunny1100.jpg 1100w,">
+            <figcaption> Summer</figcaption>
+        </figure>
+        
       </div>   
       <div class="conditions">
         <p>Precipitation:</p>  
@@ -88,32 +116,39 @@
 	</tbody>
       </table>
     </section>
-      
+      <h2>Greenville</h2>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+
     <article>
+        <h2>Franklin in Summer</h2>
         <figure class="summerphoto">
-      <img src= "Images/beach-blur100.jpg" alt="Article" >
-            <!--sizes="50vw"
+      <img src= "Images/beach-blur100.jpg" sizes="50vw" 
             srcset= "images/beach-blur200.jpg 200w,
                      images/beach-blur500.jpg 500w,
                      images/beach-blur800.jpg 800w,
-                     images/beach-blur1100.jpg 1100w,"
-            -->
+                     images/beach-blur1100.jpg 1100w,">
+            
             <figcaption> Enjoy summer</figcaption>
         </figure>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi euismod, varius turpis sed, bibendum arcu. Aliquam et placerat lectus. Aliquam quis nulla ipsum. In finibus semper bibendum. Curabitur vitae magna at tortor ornare imperdiet ac molestie dui. Fusce suscipit quam a quam consequat, et rutrum nunc scelerisque. Donec porta fermentum tortor eget sagittis. Nullam eget aliquam justo. Phasellus porta dapibus metus, ultrices accumsan velit porta et. Fusce id ultricies ligula. Cras erat enim, faucibus sit amet nibh in, luctus dapibus massa. Vivamus vulputate varius arcu, a iaculis metus semper sit amet. Donec feugiat mi in orci dignissim iaculis. Nunc tincidunt non nisl nec porta. Aenean ultricies turpis odio, a gravida lacus aliquet vitae.</p>
     </article>		  
   
   </main>
     
-  <footer>
+<!-- FOOTER-->
+    
+  <footer class="clearfix">
     <section class="contact">
       Contact information placeholder
       999.999.9999
       123 Main St. Franklin City, US 99999
       Google Map
     </section>
-    <section class="footer-bar">&copy;2018 | All Rights Reserved | Forecast Now | <span id="currentdate">Current Date Placeholder</span>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Forecast Now |  <span id="currentdate">Current Date Placeholder</span>
     </section>
   </footer>
+    <script src="scripts/currentdate.js"></script>
 
 </body>
 </html>
