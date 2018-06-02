@@ -69,14 +69,6 @@ nav ul li.active a {
     }
 nav ul.hide {display: none;}
 
-.main {   
-    -ms-flex: 70%; /* IE10 */
-    flex: 70%;
-    background-color: white;
-    padding: 20px;
-}
-
-
 main {
     padding: 0 2%;
     min-height: 10rem;
