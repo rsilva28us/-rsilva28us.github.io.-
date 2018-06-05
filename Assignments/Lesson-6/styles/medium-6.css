@@ -4,7 +4,7 @@
     
     nav button { display: none;} 
     
-    nav ul.hide {display: block;}
+   nav ul.hide {display: block;}
     
     nav ul {margin-left: 2%;
         
@@ -20,4 +20,4 @@
     }
    /* section.forecast { ______ }   show the 10-day forecast with the medium view and up */
 
-  }
+}

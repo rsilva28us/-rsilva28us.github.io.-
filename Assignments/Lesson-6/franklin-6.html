@@ -3,7 +3,7 @@
 <head> 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">   
-      <title>Weather site Project</title>
+      <title>Franklin Weather</title>
       <meta name="description" content="Assignment web page for Ronald Silva, student in CIT 230: Web Frontend Development at Brigham Young University-Idaho, Weather site project">
     
      <link rel="stylesheet" href="styles/main-5.css">
@@ -37,10 +37,6 @@
 <!-- NAVIGATION-->
   <nav class="clearfix">
       <button onclick="toggleMenu()">&#9776;</button>
-     <script> function toggleMenu() {
-   document.getElementById("primaryNav").classList.toggle("hide");
-         }           </script>          
-
     <ul id="primaryNav" class="hide">
     	<li><a href="#">Home</a></li>
     	<li class="active"><a href="#">Franklin</a></li>
@@ -57,7 +53,7 @@
       <h2>Franklin</h2>
       <h5>Weather</h5>
              <figure class="franklinphoto">
-                <img src= "Images/franklin-original1028.jpg" sizes="50vw" 
+                <img src= "Images/franklin-original1028.jpg" alt="Franklin photo" sizes="50vw" 
                     srcset= "Images/franklin200.jpg 200w,
                      Images/franklin500.jpg 500w,
                      Images/franklin800.jpg 800w,
@@ -80,7 +76,7 @@
       </div>
       <div class="current">
           <figure class="sunnyphoto">
-      <img src= "Images/sunny100.jpg" sizes="50vw" 
+      <img src= "Images/sunny100.jpg" alt="Sunny day" sizes="50vw" 
             srcset= "Images/sunny200.jpg 200w,
                      Images/sunny500.jpg 500w,
                      Images/sunny800.jpg 800w,
@@ -135,7 +131,7 @@
     <article>
         <h2>Franklin in Summer</h2>
         <figure class="summerphoto">
-      <img src= "Images/beach-blur100.jpg" sizes="50vw" 
+      <img src= "Images/beach-blur100.jpg" alt="Artilce photo" sizes="50vw" 
             srcset= "Images/beach-blur200.jpg 200w,
                      Images/beach-blur500.jpg 500w,
                      Images/beach-blur800.jpg 800w,
@@ -160,6 +156,7 @@
     <section class="footer-bar">&copy;2018 | All Rights Reserved | Forecast Now |  <span id="currentdate">Current Date Placeholder</span>
     </section>
   </footer>
+    <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
 
 </body>
