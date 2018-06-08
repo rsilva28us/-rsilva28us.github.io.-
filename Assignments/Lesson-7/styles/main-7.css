@@ -21,7 +21,6 @@ header {
 
 header .subheading { 
     display:flex;
-    flex: flex nowrap;
     justify-content: center;
   
 }
