@@ -19,8 +19,9 @@ header {
      
 }
 
-header .subheading { display:flex;
-    flex-flow: flex nowrap;
+header .subheading { 
+    display:flex;
+    flex: flex nowrap;
     justify-content: center;
   
 }
