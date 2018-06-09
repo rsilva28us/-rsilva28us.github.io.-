@@ -3,7 +3,7 @@
     nav ul li a { padding: .6rem 1rem;}
     
     
-  }
+  
 
 	div.theGallery figure:hover {
 		box-shadow: 5px 10px 10px gray;
@@ -16,3 +16,4 @@ div.theGallery figure img{
 div.theGallery {
   		grid-template-columns: 1fr 1fr 1fr;
 	}
+}
