@@ -91,8 +91,8 @@ main {
 
 main figure.summerphoto {
     width: 50%;
-    margin: 0;
-    float:right;
+    margin: .2rem 2%;
+    
 
 }
 section.summary {
@@ -117,7 +117,10 @@ section.city{
 article{
     border-style: solid;
     border-width: medium;
+    display: flex;
+    flex-flow: column;
 }
+
 main figure.franklinphoto img { width: 100%; margin: 0;}
 main figure.franklinphoto figcaption{text-align: center; font-size: .75rem}
 
