@@ -15,7 +15,7 @@ td, th {
   padding: 10px 20px;
  
 }
-.head{ font-size: 2rem;}
+thead{ font-size: 2rem;}
 .list{ background-color: #628ca6; color: #ffffff; } 
 
 tr:nth-child(even) td {
@@ -27,4 +27,3 @@ tr:nth-child(odd) td {
 }
 .blackfriday :nth-child(2){ background-color: #628ca6; text-align: center;color: text-align: center; color: #ffffff;
 }
-
