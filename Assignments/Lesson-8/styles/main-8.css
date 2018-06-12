@@ -25,5 +25,5 @@ tr:nth-child(even) td {
 tr:nth-child(odd) td {
   background-color: #e7f0ed;
 }
-.highest  :nth-child(3){ background-color: #628ca6;  color: #ffffff;
+.highest :nth-child(3){ background-color: #628ca6;  color: #ffffff;
 }
