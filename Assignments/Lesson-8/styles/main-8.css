@@ -25,5 +25,5 @@ tr:nth-child(even) td {
 tr:nth-child(odd) td {
   background-color: #e7f0ed;
 }
-.blackfriday :nth-child(2){ background-color: #628ca6; text-align: center;color: text-align: center; color: #ffffff;
+.highest  :nth-child(3){ background-color: #628ca6;  color: #ffffff;
 }
