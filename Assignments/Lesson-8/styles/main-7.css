@@ -1,0 +1,165 @@
+
+
+* { margin: 0;
+    box-sizing: border-box;}
+
+body {
+  font-size: 16px;
+  font-family: 'Cutive', serif;
+}
+h1, h2, h3 {
+    font-family: 'Sanchez', serif;
+}
+
+header {
+    padding: .5rem 0%;
+    background-color: #99e6ff;
+    font-family: 'Cutive', serif;
+
+     
+}
+
+header .subheading { 
+    display:flex;
+    justify-content: center;
+  
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+    margin-right: auto;
+        }
+
+
+nav {
+  background-color: #99e6ff;
+    display: flex;
+}
+
+nav ul {
+
+    margin: 0;
+    padding: 0;
+     display: flex;
+    flex-wrap: wrap;
+
+
+}
+nav ul li {
+    
+    list-style: none;
+    text-align: center;
+    background-color: #555;
+    flex-basis: 100%;
+    }
+nav ul li a {
+   display: block;
+    background-color: #444;
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+    
+
+    }
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: #eee;
+    color: #333;
+    flex-basis: 100%;
+    
+    }
+nav ul li.active a {
+    background-color: #4CAF50;
+    color: #fff;
+    }
+nav ul.hide {display: none;}
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+main figure.summerphoto {
+    width: 50%;
+    margin: .2rem 2%;
+    
+
+}
+section.summary {
+    border-style: solid;
+    border-width: medium;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+section.forecast {
+    border-style: solid;
+    border-width: medium;
+  
+}
+section.city{
+    display:flex;
+    flex-flow: column nowrap;
+       border-style: solid;
+    border-width: medium;
+}
+article{
+    border-style: solid;
+    border-width: medium;
+    display: flex;
+    flex-flow: column;
+}
+
+main figure.franklinphoto img { width: 100%; margin: 0;}
+main figure.franklinphoto figcaption{text-align: center; font-size: .75rem}
+
+main figure.summerphoto img { width: 100%; margin: 0;}
+main figure.summerphoto figcaption{text-align: center; font-size: .75rem}
+
+div.theGallery {
+    display: grid;
+    
+    grid-template-columns: auto;
+    grid-gap: 20px;
+}
+
+div.theGallery figure {
+    margin: 2rem 0;
+    border: none;
+}
+
+
+div.theGallery figure figcaption {
+            text-align: center;
+            font-size: 1.0rem;
+}
+	div.theGallery figure:hover {
+		box-shadow: 5px 10px 10px gray;
+        opacity: .5;
+        border-radius: 5px 50px
+}
+div.theGallery figure img{ width: 100%;
+    border-radius: 5px 50px;
+}
+
+footer {
+ background-color: #99e6ff;
+    padding: .5rem 2%;
+    text-align: center;
+}
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
