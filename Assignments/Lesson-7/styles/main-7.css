@@ -101,24 +101,33 @@ section.summary {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+      padding: .6rem;
+    border: 2px solid  #191970;
+    border-radius: .3em;
 }
 
 section.forecast {
-    border-style: solid;
-    border-width: medium;
-  
+    display: none;
 }
+
 section.city{
     display:flex;
     flex-flow: column nowrap;
        border-style: solid;
     border-width: medium;
+      padding: .6rem;
+    border: 2px solid  #191970;
+    border-radius: .3em;
 }
 article{
     border-style: solid;
     border-width: medium;
     display: flex;
     flex-flow: column;
+    padding: .6rem;
+    border: 2px solid  #191970;
+    border-radius: .3em;
+    
 }
 
 main figure.franklinphoto img { width: 100%; margin: 0;}
@@ -152,6 +161,7 @@ div.theGallery figure figcaption {
 div.theGallery figure img{ width: 100%;
     border-radius: 5px 50px;
 }
+
 
 footer {
  background-color: #99e6ff;

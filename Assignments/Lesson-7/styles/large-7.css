@@ -3,7 +3,8 @@
     nav ul li a { padding: .6rem 1rem;}
     
     
-  
+  section.forecast {
+         max-width: 98%;}
 
 	div.theGallery figure:hover {
 		box-shadow: 5px 10px 10px gray;

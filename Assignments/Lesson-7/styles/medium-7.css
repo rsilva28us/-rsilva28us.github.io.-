@@ -21,8 +21,42 @@
         border-right: 1px solid rgba(0,0,0,0.3);
         padding: .8rem 1rem;
     }
-   /* section.forecast { ______ }   show the 10-day forecast with the medium view and up */
+   /* section.forecast */
+    
+    section.forecast {
+     display: flex;
+     flex-flow: column nowrap;
+     text-align: center;
+     padding: .6rem;
+     border: 2px solid  #191970;
+     border-radius: .3em;
+     width: 100%;
 
+
+}
+table {
+  border-collapse: collapse;
+  border: 2px solid #191970;
+  letter-spacing: 1px;
+  font-size: 1rem;
+    
+}
+thead { background-color: #4CAF50;
+    color:#eee;
+}
+td, th {
+  border: 1px solid #191970;
+  padding: 0.5em;
+ 
+}
+thead{ font-size: 1rem;}
+    
+    
+    
+    
+/*--------Gallery----*/
+    
+    
 	div.theGallery {
         grid-template-columns: 1fr 1fr;
 	}
