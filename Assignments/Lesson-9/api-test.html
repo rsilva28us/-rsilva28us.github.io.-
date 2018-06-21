@@ -3,13 +3,14 @@
 <head> 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">   
-      <title>Weather Gallery</title>
-      <meta name="description" content="Assignment web page for Ronald Silva, student in CIT 230: Web Frontend Development at Brigham Young University-Idaho, Weather Gallery">
+      <title>Franklin Weather</title>
+      <meta name="description" content="Assignment web page for Ronald Silva, student in CIT 230: Web Frontend Development at Brigham Young University-Idaho, Weather site project">
     
      <link rel="stylesheet" href="styles/normalize.css">
-     <link rel="stylesheet" href="styles/main-7.css">
-     <link rel="stylesheet" href="styles/medium-7.css">
-     <link rel="stylesheet" href="styles/large-7.css">
+     <link rel="stylesheet" href="styles/main-9.css">
+     <link rel="stylesheet" href="styles/medium-9.css">
+     <link rel="stylesheet" href="styles/large-9.css">
+     
      <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet">
@@ -19,7 +20,6 @@
      <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
     
-    
 </head>
     
     
@@ -27,7 +27,7 @@
 
 <!-- HEADER-->
     
-     <header class=" clearfix">
+    <header class=" clearfix">
         <div class="subheading">
         <figure class="logo">
             <img src="Images/mages/logoweatheroriginal.png" alt="logo " srcset="Images/logoweather1.png 1x, Images/logoweather2.png 2x, Images/logoweather3.png 3x">
@@ -46,54 +46,63 @@
       <button onclick="toggleMenu()">&#9776;</button>
     <ul id="primaryNav" class="hide">
     	<li><a href="franklin-7.html">Home</a></li>
-    	<li><a href="franklin-7.html">Franklin</a></li>
+    	<li class="active"><a href="franklin-7.html">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
     	<li><a href="#">Springfield</a></li>
     	<li><a href="/Assignments/Lesson-8/stormcenter.html">Storm Center</a></li>
-    	<li class="active"><a href="gallery-7.html">Gallery</a></li>
+    	<li><a href="gallery-7.html">Gallery</a></li>
     </ul>		
   </nav>
     <br>
+      
     <!-- MAIN-->
-  <main >
-      
-    <h1>Weather Gallery</h1>
-
-    <div class="theGallery">
-        <figure>
-        <img src= "Images/beachcalm500.jpg" alt="Beach Calm">
-                <figcaption>Calm Beach</figcaption>
-            </figure>
-
-        <figure>
-                <img src= "Images/coldweather500.jpg" alt="Cold Weather" >
-                <figcaption>Cold Wheather</figcaption>
-        </figure>
-
-        <figure>
-                <img src= "Images/bungalow500.jpg" alt="Bungalow">
-                <figcaption>Caribean Bungalow</figcaption>
-        </figure>
-
-        <figure>
-                <img src= "Images/colourfulfall500.jpg" alt="Colourful Fall">
-                <figcaption>Colorful Fall</figcaption>
-        </figure>
-
-        <figure>
-                <img src= "Images/snowymountain500.jpg" alt="Snowy Mountain">
-                <figcaption>Snowy Mountains</figcaption>
-        </figure>
-
-        <figure>
-               <img src= "Images/srpring500.jpg" alt="Spring Franklin">
-                <figcaption>Spring Season</figcaption>
-        </figure>
+  <main class="clearfix">
+   
+      <div class="homepage">
+        <h1>Franklin City</h1>
+        <p>The most beautiful city of the State</p>
         </div>
+             
+            
+        <section class="summary">
+            <h3>Weather Summary</h3>
 
-    </main>
+               <div class="conditions">
+                    <p>Current Temperature : <span id="current"> 50 </span>&deg;F</p>
+                    <p>Condition: <span id="description"> clear </span></p>
+                    <p>High: <span id="hightemp"> 100 </span>&deg;F</p>
+                    <p>Low: <span id="lowtemp"> 10 </span>&deg;F</p>
+                    <p>Wind Speed: <span id="windspeed"> 5</span> mph</p>
+                    <p>Image Icon <img src="" id="weatherimage"></p>
+                    
+    
+                </div>
+            </section>
+    <!-- 
+      <h2>Today</h2>
+        <div class="highlow">
+                <p>High: 89&deg;</p>
+                <p>Low:  56&deg;</p>
+        </div>
+            <br>
+            <div class="current">
+            <p>Sunny</p>
+                <figure class="sun">
+            <img src="Images/sun1.png" alt="sun" width="70" height="60">
+        </figure>
+            </div>
+            <div class="conditions">
+        <p>Precipitation: 0%</p>  
+        <p>Wind Speed: 5 mph SW</p>  
+        <p>Wind Chill:  <span id="windChill"> Current Wind Chill Placeholder</span></p>
+      </div>  
+      </section>
+
+-->
       
-      
+     
+  
+  </main>
     
 <!-- FOOTER-->
     
@@ -108,7 +117,7 @@
   </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weatherapi.js"></script>
 
 </body>
 </html>

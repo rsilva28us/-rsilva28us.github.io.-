@@ -3,13 +3,14 @@
 <head> 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">   
-      <title>Weather Gallery</title>
-      <meta name="description" content="Assignment web page for Ronald Silva, student in CIT 230: Web Frontend Development at Brigham Young University-Idaho, Weather Gallery">
+      <title>Franklin Weather</title>
+      <meta name="description" content="Assignment web page for Ronald Silva, student in CIT 230: Web Frontend Development at Brigham Young University-Idaho, Weather site project">
     
      <link rel="stylesheet" href="styles/normalize.css">
-     <link rel="stylesheet" href="styles/main-7.css">
-     <link rel="stylesheet" href="styles/medium-7.css">
-     <link rel="stylesheet" href="styles/large-7.css">
+     <link rel="stylesheet" href="styles/main-9.css">
+     <link rel="stylesheet" href="styles/medium-9.css">
+     <link rel="stylesheet" href="styles/large-9.css">
+     <link rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet">
@@ -19,18 +20,18 @@
      <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
     
-    
 </head>
     
     
 <body>
+   
 
 <!-- HEADER-->
     
-     <header class=" clearfix">
+    <header class=" clearfix">
         <div class="subheading">
         <figure class="logo">
-            <img src="Images/mages/logoweatheroriginal.png" alt="logo " srcset="Images/logoweather1.png 1x, Images/logoweather2.png 2x, Images/logoweather3.png 3x">
+            <img src="Images/images/logoweatheroriginal.png" alt="logo " srcset="Images/logoweather1.png 1x, Images/logoweather2.png 2x, Images/logoweather3.png 3x">
         </figure>
             <div class="text">
             <h1>Forecast Now</h1>
@@ -45,55 +46,42 @@
   <nav class="clearfix">
       <button onclick="toggleMenu()">&#9776;</button>
     <ul id="primaryNav" class="hide">
-    	<li><a href="franklin-7.html">Home</a></li>
+    	<li class="active"><a href="index.html">Home</a></li>
     	<li><a href="franklin-7.html">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
     	<li><a href="#">Springfield</a></li>
-    	<li><a href="/Assignments/Lesson-8/stormcenter.html">Storm Center</a></li>
-    	<li class="active"><a href="gallery-7.html">Gallery</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery-7.html">Gallery</a></li>
     </ul>		
   </nav>
     <br>
+      
     <!-- MAIN-->
-  <main >
-      
-    <h1>Weather Gallery</h1>
-
-    <div class="theGallery">
-        <figure>
-        <img src= "Images/beachcalm500.jpg" alt="Beach Calm">
-                <figcaption>Calm Beach</figcaption>
-            </figure>
-
-        <figure>
-                <img src= "Images/coldweather500.jpg" alt="Cold Weather" >
-                <figcaption>Cold Wheather</figcaption>
-        </figure>
-
-        <figure>
-                <img src= "Images/bungalow500.jpg" alt="Bungalow">
-                <figcaption>Caribean Bungalow</figcaption>
-        </figure>
-
-        <figure>
-                <img src= "Images/colourfulfall500.jpg" alt="Colourful Fall">
-                <figcaption>Colorful Fall</figcaption>
-        </figure>
-
-        <figure>
-                <img src= "Images/snowymountain500.jpg" alt="Snowy Mountain">
-                <figcaption>Snowy Mountains</figcaption>
-        </figure>
-
-        <figure>
-               <img src= "Images/srpring500.jpg" alt="Spring Franklin">
-                <figcaption>Spring Season</figcaption>
-        </figure>
+  <main>
+      <div class="homepage">
+        <h1>Forecast Now Weather Center</h1>
+        <p>Welcome to Forecast Now weather center, your information site</p>
         </div>
-
-    </main>
+             
+        <figure class="homepagephoto">
+            <img src= "Images/agriculture200.jpg" alt="homepage photo" sizes="50vw" 
+                 srcset= "Images/agriculture200.jpg 200w,
+                        Images/agriculture500.jpg 500w,
+                        Images/agriculture800.jpg 800w,
+                        Images/agriculture1100.jpg 1100w">
+        </figure>
+            
+        <section class="townsinfo"></section>
       
-      
+        <figure class="cloudsky">
+            <img src= "Images/cloudsky200.jpg" alt="homepage photo cloudsky" sizes="50vw" 
+                 srcset= "Images/cloudsky2200.jpg 200w,
+                     Images/cloudsky500.jpg 500w,
+                     Images/cloudsky800.jpg 800w,
+                     Images/cloudsky1100.jpg 1100w">
+         </figure>
+                   
+  </main>
     
 <!-- FOOTER-->
     
@@ -108,7 +96,8 @@
   </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/homeP.js"></script>
+
 
 </body>
 </html>

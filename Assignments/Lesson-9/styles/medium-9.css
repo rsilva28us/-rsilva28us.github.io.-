@@ -66,4 +66,10 @@
 div.theGallery figure img{ 
     border-radius: 5px 50px;
 }
-} 
+        /*-----HOMEPAGE------*/
+
+   .homepage {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

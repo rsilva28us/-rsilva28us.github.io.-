@@ -6,17 +6,18 @@
 body {
   font-size: 16px;
   font-family: 'Cutive', serif;
+   
 }
 h1, h2, h3 {
-    font-family: 'Sanchez', serif;
+     font-family: 'Cinzel', cursive;
 }
 
 header {
     padding: .5rem 0%;
     background-color: #99e6ff;
-    font-family: 'Cutive', serif;
-
-     
+    position: static;
+    font-size: 1.5em;
+ 
 }
 
 header .subheading { 
@@ -64,6 +65,7 @@ nav ul li a {
     text-decoration: none;
     font-size: .9rem;
     text-align: center;
+    font-family: 'Cinzel', cursive;
     
 
     }
@@ -89,12 +91,7 @@ main {
 }
 
 
-main figure.summerphoto {
-    width: 50%;
-    margin: .2rem 2%;
-    
 
-}
 section.summary {
     border-style: solid;
     border-width: medium;
@@ -109,10 +106,8 @@ section.forecast {
 section.city{
     display:flex;
     flex-flow: column nowrap;
-    border-style: solid;
+       border-style: solid;
     border-width: medium;
-    text-align: center;
-    padding: 1rem
 }
 article{
     border-style: solid;
@@ -121,11 +116,28 @@ article{
     flex-flow: column;
 }
 
-main figure.franklinphoto img { width: 100%; margin: 0;}
-main figure.franklinphoto figcaption{text-align: center; font-size: .75rem}
+main figure.franklinphoto img { 
+    width: 100%;
+    padding: 1em 1em;
+    margin: 0;
 
-main figure.summerphoto img { width: 100%; margin: 0;}
-main figure.summerphoto figcaption{text-align: center; font-size: .75rem}
+}
+main figure.franklinphoto figcaption{
+    text-align: center;
+    font-size: .75rem
+}
+
+main figure.summerphoto img { 
+    width: 40%;
+    margin: .2rem 2%;
+    
+
+}
+}
+main figure.summerphoto figcaption{
+    text-align: center;
+    font-size: .75rem
+}
 
 /* Gallery style*/
 
@@ -233,6 +245,68 @@ form label input:required:valid {
     
     
 }
+
+/*-----HOMEPAGE-----*/
+.homepage h1 {
+    font-family: 'Cinzel', cursive;
+    font-size: 3em;
+}
+
+.homepage p {
+     font-family: 'Cinzel', cursive;
+    font-size: 2em;
+    padding: 0.3em;
+    
+}
+main figure.homepagephoto img {
+    width: 100%;
+    margin: 0;
+}
+main figure.cloudsky img { 
+    width: 100%; 
+    margin: 0;
+    
+}
+   .townsinfo {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0.2em;
+       
+    }
+    section>article {
+        background-color: #4CAF50;
+        color:#ffffff;
+        border: 4px solid #79B473;
+        border-radius: 5px 30px;
+        padding: 0 10px 0 10px;
+        margin: 2em 1em;
+       
+    }
+    .townsinfo h2 {
+        font-family: 'Cinzel', cursive;
+        font-size: 3em;
+        color: #000000;
+        margin: 1em;
+        text-align: center;
+    }
+     .townsinfo h3 {
+         font-family: 'Cinzel', cursive;
+        font-size: 2em;
+        color: #000000;
+        margin: 0.7em;
+         text-align: center;
+    }
+    .townsinfo p {
+         font-family: 'Cinzel', cursive;
+        font-size: 2em;
+        margin: 0.2em;
+    }
+    .townsinfo ul {
+         font-family: 'Cinzel', cursive;
+        font-size: 1.5em;
+        line-height: 1.9em;
+
+    }
     
 /*Footer*/
 
