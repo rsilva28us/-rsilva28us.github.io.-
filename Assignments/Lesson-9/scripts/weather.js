@@ -16,7 +16,7 @@ weatherRequest.onload = function() {
     document.getElementById('lowtemp').innerHTML = weatherInfo.main.temp_min;
     document.getElementById('windspeed').innerHTML = weatherInfo.wind.speed;
    
-    var icon = 'http://openweathermap.org/img/w/' + weatherInfo.weather["0"].icon + '.png';
+    var icon = '//openweathermap.org/img/w/' + weatherInfo.weather["0"].icon + '.png';
     document.getElementById('weatherimage').src = icon;
 }
  
