@@ -22,4 +22,5 @@ div.theGallery {
     .townsinfo {
         grid-template-columns: 1fr 1fr 1fr;
     }
+     
 }
