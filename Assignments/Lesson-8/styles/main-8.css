@@ -15,7 +15,6 @@ header {
     padding: .5rem 0%;
     background-color: #99e6ff;
     position: static;
-    font-size: 1.5em;
 }
 
 header .subheading { 
@@ -129,7 +128,6 @@ main figure.summerphoto figcaption{text-align: center; font-size: .75rem}
 
 div.theGallery {
     display: grid;
-    
     grid-template-columns: auto;
     grid-gap: 20px;
 }
@@ -171,7 +169,6 @@ form legend {
      color:#00008B;
     margin: 0 1rem;
     padding: .10rem;
-    font-size: 1.5em;
 }
 
 form label {

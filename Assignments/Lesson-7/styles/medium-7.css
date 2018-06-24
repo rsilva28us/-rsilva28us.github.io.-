@@ -2,6 +2,9 @@
 
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
     
+    header {
+    font-size: 1.5em;
+}
     nav button { 
         display: none;} 
     
