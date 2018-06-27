@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">   
+      <title>Franklin Weather</title>
+      <meta name="description" content="Assignment web page for Ronald Silva, student in CIT 230: Web Frontend Development at Brigham Young University-Idaho, Weather site project">
+    
+     <link rel="stylesheet" href="styles/normalize.css">
+     <link rel="stylesheet" href="styles/main-9.css">
+     <link rel="stylesheet" href="styles/medium-9.css">
+     <link rel="stylesheet" href="styles/large-9.css">
+     <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Henny+Penny" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    
+</head>
+    
+    
+<body>
+   
+
+<!-- HEADER-->
+    
+    <header class=" clearfix">
+        <div class="subheading">
+        <figure class="logo">
+            <img src="Images/images/logoweatheroriginal.png" alt="logo " srcset="Images/logoweather1.png 1x, Images/logoweather2.png 2x, Images/logoweather3.png 3x">
+        </figure>
+            <div class="text">
+            <h1>Forecast Now</h1>
+        <h2>Franklin City Weather</h2></div>
+ 
+        </div>
+        
+       </header> 
+  
+    
+<!-- NAVIGATION-->
+  <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li class="active"><a href="/Assignments/weathersite/index.html">Home</a></li>
+    	<li><a href="/Assignments/weathersite/franklin.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="/Assignments/weathersite/stormcenter.html">Storm Center</a></li>
+    	<li><a href="/Assignments/weathersite/gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    <br>
+    
+    <!-- MAIN-->
+  <main>
+      <div class="homepage">
+        <h1>Forecast Now Weather Center</h1>
+        <p>Welcome to Forecast Now weather center, your information site</p>
+        </div>
+             
+        <figure class="homepagephoto">
+            <img src= "Images/agriculture200.jpg" alt="homepage photo" sizes="50vw" 
+                 srcset= "Images/agriculture200.jpg 200w,
+                        Images/agriculture500.jpg 500w,
+                        Images/agriculture800.jpg 800w,
+                        Images/agriculture1100.jpg 1100w">
+        </figure>
+            
+        <section class="townsinfo">
+
+         </section>
+      
+        <figure class="cloudsky">
+            <img src= "Images/cloudsky200.jpg" alt="homepage photo cloudsky" sizes="50vw" 
+                 srcset= "Images/cloudsky2200.jpg 200w,
+                     Images/cloudsky500.jpg 500w,
+                     Images/cloudsky800.jpg 800w,
+                     Images/cloudsky1100.jpg 1100w">
+         </figure>
+                   
+  </main>
+    
+<!-- FOOTER-->
+    
+  <footer class="clearfix">
+    <aside> <p>
+              Forecast Now
+             <br>
+              123 Main St. Franklin City, US 645068</p>
+    </aside>
+    <p>&copy;2018 | All Rights Reserved | Forecast Now |  <span id="currentdate">Current Date Placeholder</span>
+    </p>
+  </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/homeP.js"></script>
+
+
+</body>
+</html>

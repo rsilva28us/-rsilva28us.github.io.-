@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">   
+      <title>Franklin Weather</title>
+      <meta name="description" content="Assignment web page for Ronald Silva, student in CIT 230: Web Frontend Development at Brigham Young University-Idaho, Storm Center">
+    
+     <link rel="stylesheet" href="styles/normalize.css">
+     <link rel="stylesheet" href="styles/main-9.css">
+     <link rel="stylesheet" href="styles/medium-9.css">
+     <link rel="stylesheet" href="styles/large-9.css">
+      <link rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Cutive|Eater|Henny+Penny|Rock+Salt|Shrikhand|Cinzel|Josefin+Slab|Sanchez" rel="stylesheet">
+</head>
+    
+    
+<body>
+
+<!-- HEADER-->
+    
+    <header class=" clearfix">
+        <div class="subheading">
+        <figure class="logo">
+            <img src="Images/mages/logoweatheroriginal.png" alt="logo " srcset="Images/logoweather1.png 1x, Images/logoweather2.png 2x, Images/logoweather3.png 3x">
+        </figure>
+            <div class="text">
+            <h1>Forecast Now</h1>
+        <h2>Franklin City Weather</h2></div>
+ 
+        </div>
+        
+       </header> 
+  
+    
+<!-- NAVIGATION-->
+  <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    <li><a href="/Assignments/weathersite/index.html">Home</a></li>
+    	<li><a href="/Assignments/weathersite/franklin.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li class="active"><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="/Assignments/weathersite/gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+    
+    
+<!-- CONTENT HERE -->
+<main class="thanks">
+    <h1>Thank you for your report</h1>
+        <p>Forecast Now, the Frankling Meteorological Center will process your report and get in touch as soon as possible.</p>
+
+          
+        
+    </main>
+    
+<!-- FOOTER HERE -->   
+   <footer class="clearfix">
+    <aside> <p>
+              Forecast Now
+             <br>
+              123 Main St. Franklin City, US 99999</p>
+    </aside>
+    <p>&copy;2018 | All Rights Reserved | Forecast Now |  <span id="currentdate">Current Date Placeholder</span>
+    </p>
+  </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/rating.js"></script>
+    <script src="scripts/mainmenu.js"></script>
+
+</body>
+</html>

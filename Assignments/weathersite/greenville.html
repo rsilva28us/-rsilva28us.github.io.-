@@ -7,9 +7,9 @@
       <meta name="description" content="Assignment web page for Ronald Silva, student in CIT 230: Web Frontend Development at Brigham Young University-Idaho, Weather site project">
     
      <link rel="stylesheet" href="styles/normalize.css">
-     <link rel="stylesheet" href="styles/main-7.css">
-     <link rel="stylesheet" href="styles/medium-7.css">
-     <link rel="stylesheet" href="styles/large-7.css">
+     <link rel="stylesheet" href="styles/main-9.css">
+     <link rel="stylesheet" href="styles/medium-9.css">
+     <link rel="stylesheet" href="styles/large-9.css">
      <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet">
@@ -42,22 +42,26 @@
 <!-- NAVIGATION-->
   <nav class="clearfix">
       <button onclick="toggleMenu()">&#9776;</button>
-    <ul class="hide mainmenu" id="primaryNav">
-    	<li><a href="franklin-7.html">Home</a></li>
-    	<li class="active"><a href="franklin-7.html">Franklin</a></li>
-    	<li><a href="#">Greenville</a></li>
-    	<li><a href="#">Springfield</a></li>
-    	<li><a href="/Assignments/Lesson-8/stormcenter.html">Storm Center</a></li>
-    	<li><a href="gallery-7.html">Gallery</a></li>
+    <ul id="primaryNav" class="hide">
+    	<li><a href="/Assignments/Lesson-9/index.html">Home</a></li>
+    	<li><a href="/Assignments/weathersite/franklin.html">Franklin</a></li>
+    	<li  class="active"><a href="/Assignments/weathersite/greenville.html">Greenville</a></li>
+    	<li><a href="/Assignments/weathersite/springfielde.html">Springfield</a></li>
+    	<li><a href="/Assignments/weathersite/stormcenter.html">Storm Center</a></li>
+    	<li><a href="/Assignments/weathersite/gallery.html">Gallery</a></li>
     </ul>		
   </nav>
     <br>
       
     <!-- MAIN-->
   <main class="clearfix">
-    <section class="city">
-     
-             <figure class="franklinphoto">
+      
+         <div class="homepage">
+        <h1>Greenville</h1>
+        <p>The most beautiful city of the State</p>
+        </div>
+             
+        <figure class="franklinphoto">
                 <img src= "Images/franklin-original1028.jpg" alt="Franklin photo" sizes="50vw" 
                     srcset= "Images/franklin200.jpg 200w,
                      Images/franklin500.jpg 500w,
@@ -65,39 +69,26 @@
                      Images/franklin1100.jpg 1100w">
                 <figcaption>Franklin</figcaption>
             </figure>
-         <h2>Franklin</h2>
-      <h5>Weather</h5>
-      
-      <p>The most beautiful city of the State</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        </section>
+    
       <br>
            <br>
-
-      
-            
         <section class="summary">
-            <h3>Weather Summary</h3>    
-
-      
-        
-      <h2>Today</h2>
+            <h3>Weather Summary for <span id="city"> City </span></h3>   
+            <br>
+        <div class="current">
+            <p>Current Temperature : <span id="current"> 50 </span>&deg;F</p>
+            <p>Condition: <span id="description"> clear </span></p>
+            <p><img src="Images/icon.png" alt="current weather" id="weatherimage" width="100" height="100"></p>
+        </div>
+            
         <div class="highlow">
-                <p>High: 89&deg;</p>
-                <p>Low:  56&deg;</p>
+            <p>High: <span id="hightemp"> 100 </span>&deg;F</p>
+            <p>Low: <span id="lowtemp"> 10 </span>&deg;F</p>
         </div>
             <br>
-            <div class="current">
-            <p>Sunny</p>
-                <figure class="sun">
-            <img src="Images/sun1.png" alt="sun" width="70" height="60">
-        </figure>
-            </div>
-            <div class="conditions">
-        <p>Precipitation: 0%</p>  
-        <p>Wind Speed: 5 mph SW</p>  
-        <p>Wind Chill:  <span id="windChill"> Current Wind Chill Placeholder</span></p>
-      </div>  
+        <div class="conditions">
+        <p>Wind Speed: <span id="windspeed"> 5</span> mph</p>
+        </div>  
       </section>
       
             <br>
@@ -136,20 +127,21 @@
       </table>
     </section>
   <br>
- 
-    <article>
+ <section  class="mainarticle">
+    <article class="articlesummer">
         <h2>Franklin in Summer</h2>
         <figure class="summerphoto">
-      <img src= "Images/beach-blur100.jpg" alt="Artilce photo" sizes="50vw" 
+      <img src= "Images/beach-blur100.jpg" alt="Artilce photo" sizes="25vw" 
             srcset= "Images/beach-blur200.jpg 200w,
                      Images/beach-blur500.jpg 500w,
                      Images/beach-blur800.jpg 800w,
                      Images/beach-blur1100.jpg 1100w">
             
-            <figcaption> Enjoy summer</figcaption>
+            
         </figure>
        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi euismod, varius turpis sed, bibendum arcu. Aliquam et placerat lectus. Aliquam quis nulla ipsum. In finibus semper bibendum. Curabitur vitae magna at tortor ornare imperdiet ac molestie dui. Fusce suscipit quam a quam consequat, et rutrum nunc scelerisque. Donec porta fermentum tortor eget sagittis. Nullam eget aliquam justo. Phasellus porta dapibus metus, ultrices accumsan velit porta et. Fusce id ultricies ligula. Cras erat enim, faucibus sit amet nibh in, luctus dapibus massa. Vivamus vulputate varius arcu, a iaculis metus semper sit amet. Donec feugiat mi in orci dignissim iaculis. Nunc tincidunt non nisl nec porta. Aenean ultricies turpis odio, a gravida lacus aliquet vitae.</p>
-    </article>		  
+    </article>	
+   </section>
   
   </main>
     
@@ -166,7 +158,9 @@
   </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/greenvilleweather.js"></script>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/mainmenu.js"></script>
 
 </body>
 </html>
