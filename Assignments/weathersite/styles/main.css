@@ -127,18 +127,18 @@ section.city{
      width: 100%;
     margin: 1rem ;
 }
-main figure.franklinphoto img { 
+main figure.mainphoto img { 
     width: 100%;
     padding: 1em 1em;
     margin: 0;
 
 }
-main figure.franklinphoto figcaption{
+main figure.mainphoto figcaption{
     text-align: center;
     font-size: .75rem
 }
 
-main figure.summerphoto img { 
+main figure.articlephoto img { 
     float:left;
     overflow: hidden;
     width: 40%;
