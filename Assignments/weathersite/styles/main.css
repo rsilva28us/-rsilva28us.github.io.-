@@ -121,9 +121,9 @@ section.mainarticle {
         margin: 2em 1em;
     
 }
-section .articlesummer{
+.articlesummer{
      text-align: justify;
-    padding: 0 px 0 10px;
+    padding: 1rem 10px 0 10px;
      width: 100%;
     margin: 0.1rem ;
 }
