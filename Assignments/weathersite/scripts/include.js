@@ -13,10 +13,11 @@ function include() {
           allElements[i].removeAttribute('includefile');
           include();
         }
+      }
         xhttp.open('GET', 'includes/' + file, true); // matching file names in includes folder
         xhttp.send();
         return;
-      }
+      
     }
   }
 }
