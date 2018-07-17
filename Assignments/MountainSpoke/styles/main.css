@@ -9,7 +9,7 @@ body {
     color: #ffffff;
     
 }
-h2, h5, {
+h2, h5 {
     font-family: 'Neucha', cursive;
 }
 p {
@@ -77,7 +77,7 @@ nav ul li a {
     text-align: center;
     padding: 0 10px;
     text-decoration: none;
-    letter-spacing: 2px
+    letter-spacing: 2px;
     font-size: 2px;
     }
 nav ul li:first-child a {border-left: none;}
@@ -97,7 +97,7 @@ nav ul.hide {display: none;}
 
 /* Call To Action */
 
-}
+
 .container {
     position: relative;
     width: 100%;
@@ -174,8 +174,6 @@ nav ul.hide {display: none;}
     flex-wrap: wrap;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
 .side {
     flex: 30%;
     background-color: #555;
