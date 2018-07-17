@@ -1,0 +1,135 @@
+@media only screen and (min-width: 35em) {
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+    
+    header {
+    padding: .5rem 0%;
+    background-color: #99e6ff;
+    position: static;
+    font-size: 1.5em;
+ 
+}
+    .logo {
+   width: 50%;
+   margin: 2% 0 0 1%;
+   float:left;
+}
+    
+    nav button { 
+        display: none;} 
+    
+   nav ul.hide {
+       display: flex;}
+    
+    nav ul {
+        margin-left: 2%;
+        flex-wrap: nowrap;
+    }
+    nav ul li {
+        justify-content: flex-start;
+    }
+    
+    nav ul li a {
+         float: right;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 10px;
+    text-decoration: none;
+    letter-spacing: 2px
+    font-size: 2px;
+    }
+   
+     /* section.forecast */
+    
+    section.forecast {
+     display: flex;
+     flex-flow: column nowrap;
+     text-align: center;
+     padding: .6rem;
+     border: 2px solid  #191970;
+     border-radius: .3em;
+     width: 100%;
+
+
+    }
+    .mainarticle {
+        font-size: 1.3em;
+    }
+    
+    table {
+      border-collapse: collapse;
+      border: 2px solid #191970;
+      letter-spacing: 1px;
+      font-size: 1rem;
+
+    }
+    thead { background-color: #4CAF50;
+        color:#eee;
+    }
+    td, th {
+        border: 1px solid #191970;
+        padding: 0.5em;
+ 
+    }
+    thead{ font-size: 1rem;}
+    
+ 
+    
+    
+/*--------Gallery----*/
+	div.theGallery {
+        grid-template-columns: 1fr 1fr;
+	}
+    	div.theGallery figure:hover {
+		box-shadow: 5px 10px 10px gray;
+        opacity: .5;
+        border-radius: 5px 50px
+}
+div.theGallery figure img{ 
+    border-radius: 5px 50px;
+}
+        /*-----HOMEPAGE------*/
+
+   .homepage {
+        grid-template-columns: 1fr 1fr;
+    }
+    .homepage h1 {
+    font-family: 'Cinzel', cursive;
+    font-size: 3em;
+}
+
+   .homepage p {
+     font-family: 'Cinzel', cursive;
+    font-size: 2em;
+    padding: 0.3em;
+    
+}
+    
+      .townsinfo h2 {
+        font-family: 'Cinzel', cursive;
+        font-size: 3em;
+        color: #000000;
+        margin: 1em;
+        text-align: center;
+    }
+     .townsinfo h3 {
+         font-family: 'Cinzel', cursive;
+        font-size: 2em;
+        color: #000000;
+        margin: 0.7em;
+         text-align: center;
+    }
+    .townsinfo p {
+         font-family: 'Cinzel', cursive;
+        font-size: 2em;
+        margin: 0.2em;
+    }
+    .townsinfo ul {
+         font-family: 'Cinzel', cursive;
+        font-size: 1.5em;
+        line-height: 1.9em;
+
+    }
+
+}
