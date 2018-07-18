@@ -3,20 +3,17 @@
     nav ul li a { padding: .6rem 1rem;}
     
     
-  /* Gallery*/
+  /* SIDE*/
 
-	div.theGallery figure:hover {
+div.shopside figure:hover {
 		box-shadow: 5px 10px 10px gray;
         opacity: .5;
-        border-radius: 5px 50px
+        border-radius: 5px 50px;       
 }
-div.theGallery figure img{ 
+div.Shopside figure img{ 
     border-radius: 5px 50px;
 }
-div.theGallery {
-  		grid-template-columns: 1fr 1fr 1fr;
-	}
-    
+
     /*Home Page*/
     
     .townsinfo {

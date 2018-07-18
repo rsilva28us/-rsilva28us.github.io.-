@@ -4,7 +4,7 @@
     
     header {
     padding: .5rem 0%;
-    background-color: #99e6ff;
+    background-color: #555;
     position: static;
     font-size: 1.5em;
  
@@ -15,21 +15,21 @@
    float:left;
 }
     
-    nav button { 
+nav button { 
         display: none;} 
     
-   nav ul.hide {
+nav ul.hide {
        display: flex;}
     
-    nav ul {
+nav ul {
         margin-left: 2%;
         flex-wrap: nowrap;
     }
-    nav ul li {
+nav ul li {
         justify-content: flex-start;
     }
     
-    nav ul li a {
+nav ul li a {
          float: right;
     display: block;
     color: #ffffff;
@@ -39,29 +39,23 @@
     letter-spacing: 2px
     font-size: 2px;
     }
-   
-     /* section.forecast */
     
-    section.forecast {
-     display: flex;
-     flex-flow: column nowrap;
-     text-align: center;
-     padding: .6rem;
-     border: 2px solid  #191970;
-     border-radius: .3em;
-     width: 100%;
-
-
+    .container .button1 {
+    transform: translate(-30%, -30%);
+    font-size: 16px;       
+}
+   
+    
     }
     .mainarticle {
         font-size: 1.3em;
     }
     
-    table {
+    #tourTable {
       border-collapse: collapse;
       border: 2px solid #191970;
-      letter-spacing: 1px;
-      font-size: 1rem;
+      letter-spacing: 6px;
+      font-size: 1.5rem;
 
     }
     thead { background-color: #4CAF50;
@@ -70,24 +64,28 @@
     td, th {
         border: 1px solid #191970;
         padding: 0.5em;
+       
  
     }
     thead{ font-size: 1rem;}
+
+.btn {
+    font-size: 20px;  
+}
     
  
     
     
-/*--------Gallery----*/
-	div.theGallery {
-        grid-template-columns: 1fr 1fr;
-	}
-    	div.theGallery figure:hover {
+/*--------SIDE----*/
+    	div.Shopside img:hover {
 		box-shadow: 5px 10px 10px gray;
         opacity: .5;
-        border-radius: 5px 50px
+        border-radius: 5px 50px;
+
 }
-div.theGallery figure img{ 
-    border-radius: 5px 50px;
+div.side figcaption {
+    text-align: center;
+    font-size: 1.0rem;
 }
         /*-----HOMEPAGE------*/
 

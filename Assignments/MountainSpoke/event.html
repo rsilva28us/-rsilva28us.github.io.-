@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">   
+      <title>Mountain Spoke</title>
+      <meta name="description" content="Assignment web page for Ronald Silva, student in CIT 230: Web Frontend Development at Brigham Young University-Idaho, Mountain Spoke">
+    
+     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+     <link rel="stylesheet" href="styles/medium.css">
+     <link rel="stylesheet" href="styles/large.css">
+     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+</head>
+<body>    
+
+  <header includefile="header.html">
+        
+       </header>
+
+
+<nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="tours.html">Tours</a></li>
+        <li class="active"><a href="event.html">Events</a></li>
+    	<li><a href="#">Service</a></li>
+    	<li><a href="#">Shop</a></li>
+    	<li><a href="#">Contact</a></li>
+    </ul>
+    
+    </nav>
+    <div class="container">
+        <figure class="mainPhoto">
+          <img src= "Images/bikes-coast1100.jpg" alt="main photo" sizes="50vw" 
+                    srcset= "Images/bikes-coast200.jpg 200w,
+                     Images/bikes-coast500.jpg 500w,
+                     Images/bikes-coast800.jpg 800w,
+                     Images/bikes-coast1100.jpg 1100w">
+            </figure>
+        <div class="callToAction">
+        
+          <div class="button1" href="Events.html">Mountain Spoke Events
+        Riding the best road in lake and mountain bicycle adventures</div>
+         <div class="button2" href="Events.html">Make your Reservation </div>
+        </div>
+    </div>
+
+<div class="row">
+    <!--  SIDE  -->
+  <div class="side">
+      
+      <h2>Events</h2>
+      <h5>This Month</h5>
+        <div class="Shopside">
+        <figure>
+      <img src= "Images/bicycles-bikes500.jpg" alt="Shop photo">
+          <figcaption>World Bicycle Day</figcaption>
+            
+      </figure>  
+           <figure>
+      <img src= "Images/shop500.jpg" alt="Shop2 photo">
+          <figcaption>New Shop</figcaption>
+      </figure> 
+     
+      <figure>
+      <img src= "Images/race500.jpg" alt="Shop3 photo">
+          <figcaption>Race at the Mountain</figcaption>
+      </figure>
+      
+      </div>
+      </div>
+
+    <!-- MAIN -->
+  <div class="main">
+      <h1>Registration for a Tour or Event</h1>
+     <form method="get" action="thanks.html" >
+         <fieldset>
+            <legend> Personal Information </legend>
+             
+             <label><span>Full Name*:</span> <input type="text" name="fname" placeholder="Full Name" pattern="[A-z\s]{5,}" required autocomplete="off"></label>
+             
+              <label><span>Email:</span><input type="email" name="email" placeholder="youremail@mail.com" autocomplete="off"></label>
+             
+               <label><span>Phone*:</span><input type="tel" name="phone" required autocomplete="off"></label>
+             
+                <label><span>Zip code*:</span> <input type="number" name="zip" required autocomplete="off"></label>
+          </fieldset>
+         
+         <fieldset>
+            <legend>Event</legend>
+             
+                <label><span>Select Date:</span><input type="date"  name="date"></label> 
+                
+                <label><span>Select Event:</span><input type="text"  name="event" list="selectevent">
+                    <datalist id="selectevent">
+                    <option value="None"></option>
+                    <option value="World Bicycle Day"></option>
+                    <option value="New Shop"></option>
+                    <option value="Race at the Mountain"></option>
+                    </datalist>
+             </label>
+             <label><span>Select Tour:</span><input type="text"  name="tour" list="selecttour">
+                    <datalist id="selecttour">
+                     <option value="None"></option>
+                    <option value="Mountain trail"></option>
+                    <option value="Lake Trail"></option>
+                    <option value="Full Day Mountain Experience"></option>
+                    <option value="City Tour"></option>
+                    </datalist>
+             </label>
+             
+                <label><span>Skill Lavel: From 1 to 9: </span>
+		              <input type="range" id="rating" value="5" min="1" max="9" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		              <span id="ratingvalue">5</span>
+                </label>
+            
+              <label><span>Equipment:</span>
+                  <select name="selectalternative">
+                  <option value="select" disabled selected>Select your option</option>
+                  <option value="franklin">Rent</option>
+                  <option value="greenville">Buy</option>
+                  <option value="springfield">Own</option>
+                  </select>
+             </label>
+        
+             
+           <label ><span>Additional Information</span>
+                 <textarea name="additionalinformation"></textarea>
+            </label>
+         </fieldset>
+         
+         
+          <input type="submit" value="Submit" class="submitBtn">
+        
+                
+</form>
+    </div>
+
+</div>
+
+<footer includefile="footer.html">
+  </footer>
+    
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/include.js"></script>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/weather.js"></script>
+
+
+
+</body>
+</html>
