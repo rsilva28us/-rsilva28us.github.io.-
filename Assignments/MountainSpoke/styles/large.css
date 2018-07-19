@@ -2,7 +2,7 @@
     
     nav ul li a { padding: .6rem 1rem;}
     
-    
+   
   /* SIDE*/
 
 div.shopside figure:hover {
@@ -21,3 +21,8 @@ div.Shopside figure img{
     }
      
 }
+  .thanksimg {
+        grid-template-columns: repeat(3, 31%);
+    }
+
+

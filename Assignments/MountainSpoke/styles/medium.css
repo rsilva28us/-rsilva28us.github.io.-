@@ -87,6 +87,18 @@ div.side figcaption {
     text-align: center;
     font-size: 1.0rem;
 }
+
+/*--------Thanks page----*/
+
+.thanksimg {
+        grid-template-columns: auto;
+        grid-gap: 2%;
+}
+.thanksbutton {
+    position: sticky;
+    left: 85%;
+}
+
         /*-----HOMEPAGE------*/
 
    .homepage {

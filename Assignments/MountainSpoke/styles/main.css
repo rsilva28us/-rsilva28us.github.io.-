@@ -7,6 +7,7 @@ body {
     background-color: #555;
     color: #ffffff;
     font-family:  'Neucha', cursive;
+ 
     
 }
 h1 {
@@ -72,6 +73,7 @@ nav ul li {
     list-style: none;
     text-align: left;
     flex-basis: 100%;
+    font-size: 20px;
     }
 .nav ul li a {
      display: flex;
@@ -100,21 +102,20 @@ nav ul.hide {display: none;}
 /* Call To Action */
 
 
-container {
+.container {
     position: relative;
     width: 100%;
-    max-width: 400px;
     align-content: center;
 }
 .container img {
     width:100%;
+    height: 350px;
     padding: 0em 1em;
     margin: 0;
-   
 }
 .container .button1 {
     position: absolute;
-    top:50%;
+    top:40%;
     left: 75%;
     transform: translate(-30%, -39%);
     display: inline-block;
@@ -390,8 +391,49 @@ form label input:required:valid {
 }
 .thanks{display:flex;
     text-align: center;
+}
+
+/*thanks page */
+.thanksimg {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 1em ;
+    border: none;
+       
+}
+.thanksimg figure {
+    margin: 1em 0.1em;
+    border: none;
+}
+.thanksimg figure img {
+    width: 100%;
+    border-radius: 5px 50px;
+}
+.thanksimg figure figcaption {
+    text-align: center; 
+    font-size: 16px; 
     
-    
+}
+.thanksbutton {
+    display: inline-block;
+    padding: 12px 24px;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.0625em;
+    background: #834613;
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-radius: 5px 10px;
+        
+}
+ .thanksbutton:hover {
+	 	text-decoration: none;
+        box-shadow: 5px 10px 10px gray;
+        opacity: .9;
+        border-radius: 5px 50px
+}
+.thankstext {
+    text-align: center;
 }
 
 
