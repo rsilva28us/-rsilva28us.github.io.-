@@ -1,4 +1,4 @@
-var weatherRequest = new XMLHttpRequest();
+/*var weatherRequest = new XMLHttpRequest();
 
 
 weatherRequest.open('GET','https://rsilva28us.github.io/Assignments/MountainSpoke/states.json', true);
@@ -10,13 +10,13 @@ weatherRequest.onload = function() {
     console.log(weatherInfo);
 }
    
+*/
 
 
 
 
 
 
-/*
 var stateRequest = new XMLHttpRequest();
 
 
@@ -30,4 +30,4 @@ stateRequest.onload = function() {
     
      document.getElementById('state').innerHTML = stateInfo.state;
      
-}*/
+}
