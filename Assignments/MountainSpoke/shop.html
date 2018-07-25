@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">   
+      <title>Mountain Spoke</title>
+      <meta name="description" content="Assignment web page for Ronald Silva, student in CIT 230: Web Frontend Development at Brigham Young University-Idaho, Mountain Spoke">
+    
+     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+     <link rel="stylesheet" href="styles/medium.css">
+     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/ch3mical.css">
+     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+   <!--<script src="scripts/jquery-3.3.1.min.js"></script>-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>    
+
+  <header includefile="header.html">
+        
+       </header>
+
+
+<nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="tours.html">Tours</a></li>
+        <li><a href="event.html">Events</a></li>
+    	<li class="active"><a href="shop.html">Shop</a></li>
+    	<li><a href="service.html">Service</a></li>
+    	<li><a href="contact.html">Contact</a></li>
+    </ul>
+    
+    </nav>
+  
+
+    <!-- MAIN -->
+<div class="mainaccordion">
+<h1>Select your Bike</h1>
+<div class="accordion">
+  <ul>
+    <li>
+      <div> <a href="B1">
+        <h2>Bulls Hardtail</h2>
+        <p>Light, stiff, fast – and comfortable</p>
+        </a> </div>
+    </li>
+    <li>
+      <div> <a href="B2">
+        <h2>Trek Fuel EX 9.9 29</h2>
+        <p>Trek is the world leader in mountain bike technology.</p>
+        </a> </div>
+    </li>
+    <li>
+      <div> <a href="B3">
+        <h2>Giant 0000</h2>
+        <p>So smooth, so efficient, it feel like flying</p>
+        </a> </div>
+    </li>
+    <li>
+      <div> <a href="B4">
+        <h2>Strider</h2>
+        <p>Designed for children 3 to 7 years old</p>
+        </a> </div>
+    </li>
+ 
+  </ul>
+</div>
+    </div>
+      <div class="row">
+        <div class="main">
+           <div class="tourtitle"> 
+               <h1>Mountain Spoke Shop </h1>
+    </div>
+      <div class="firstArticle">
+      <figure class="tourimg">
+      <img src= "Images/bulls500.jpg" alt="Bulls photo" sizes="40vw" 
+                    srcset= "Images/bulls200.jpg 200w,
+                     Images/bulls500.jpg 500w,
+                     Images/bulls800.jpg 800w,
+                     Images/bulls1100.jpg 1100w">
+        <figcaption>Bulls Hardtail</figcaption>
+      </figure>
+      <h1 id="B1">Bulls Hardtail </h1>
+      <p>On the technically increasingly demanding marathon and cross-country routes, the Black Adder behaves with control and agility. And extended top tube at a shorter wheelbase adds safety and agility especially on a downhill run. On rises, the steeper sitting angle ensures the proverbial BULLS climbing power. Perfection is offered by the slightly shortened head tube in the "racing trim"..</p>
+          <br>
+            <table id="tourTable">
+            <thead>
+                <tr>
+                    <th colspan="3">BLACK ADDER 29 +</th>
+                </tr>
+            </thead>
+             <tbody>
+                <tr>
+                    <td><i class="fa fa-bicycle" style="font-size:30px;"></i></td>
+                    <td><label><span>Frame Size:</span>
+                  <select name="selectFrameSize">
+                  <option value="select" disabled selected>Select Frame Size</option>
+                  <option value="S">S (41cm)</option>
+                  <option value="m">M (44cm)</option>
+                  <option value="L">L (48cm)</option>
+                  <option value="XL">XL (54cm)</option>
+                  </select>
+             </label></td>
+                </tr>
+                 <tr>
+                    <td><i class="fa fa-paint-brush"  style="font-size:30px;"></i></td>  
+                    <td><label><span>Color:</span>
+                  <select name="selectColor">
+                  <option value="select" disabled selected>Select Color</option>
+                  <option value="B">Black</option>
+                  <option value="R">Red</option>
+                  <option value="B">Blue</option>
+                  <option value="W">Wite</option>
+                  </select>
+             </label></td>
+                    
+                </tr>
+                
+                 <tr>
+                    <td><i class="fa fa-dollar" style="font-size:30px"></i></td>  
+                    <td>$4,099.00 </td>
+                    
+                </tr>
+                 
+            </tbody>     
+            <tfoot>
+                <tr>
+                   <th colspan="3"><a href="event.html" class="button" >Add To Cart</a> 
+                    </th>
+                </tr>
+            </tfoot>
+        
+        </table>
+         
+          </div>
+         
+      <br>
+      <div class="secondArticle">
+       <figure class="tour2img">
+      <img src= "Images/Trok500.jpg" alt="trek photo" sizes="35vw" 
+                    srcset= "Images/Trok200.jpg 200w,
+                     Images/Trok500.jpg 500w,
+                     Images/Trok800.jpg 800w,
+                     Images/Trok1100.jpg 1100w">
+          <figcaption>Trek</figcaption>
+      </figure>
+       <h1 is="B2">Trek Fuel EX 9.9 29</h1>
+      <p>Fuel EX 9.9 makes no compromises. A carbon frame, carbon wheels, SRAM's flagship 1x12 drivetrain, and FOX Factory Float suspension make this the one carbon full suspension mountain bike that rules every trail. It's fast on XC singletrack, light on climbs, and stable through the rowdiest terrain you can find.</p>
+          <br>
+            <table id="tourTable">
+            <thead>
+                <tr>
+                    <th colspan="3">Fuel EX 9.9 29</th>
+                </tr>
+            </thead>
+             <tbody>
+                <tr>
+                    <td><i class="fa fa-bicycle" style="font-size:30px;"></i></td>
+                    <td><label><span>Frame Size:</span>
+                  <select name="selectFrameSize">
+                  <option value="select" disabled selected>Select Frame Size</option>
+                  <option value="S">S (41cm)</option>
+                  <option value="m">M (44cm)</option>
+                  <option value="L">L (48cm)</option>
+                  <option value="XL">XL (54cm)</option>
+                  </select>
+             </label></td>
+                </tr>
+                 <tr>
+                    <td><i class="fa fa-paint-brush"  style="font-size:30px;"></i></td>  
+                    <td><label><span>Color:</span>
+                  <select name="selectColor">
+                  <option value="select" disabled selected>Select Color</option>
+                  <option value="B">Black</option>
+                  <option value="R">Red</option>
+                  <option value="B">Blue</option>
+                  <option value="W">Wite</option>
+                  </select>
+             </label></td>
+                    
+                </tr>
+                
+                 <tr>
+                    <td><i class="fa fa-dollar" style="font-size:30px"></i></td>  
+                    <td>$8,399.99 </td>
+                    
+                </tr>
+                 
+            </tbody>     
+            <tfoot>
+                <tr>
+                   <th colspan="3"><a href="event.html" class="button" >Add To Cart</a> 
+                    </th>
+                </tr>
+            </tfoot>
+        
+        </table>
+    </div>
+      <br>
+      
+       <div class="secondArticle">
+       <figure class="tour2img">
+      <img src= "Images/giant500.jpg" alt="Giant photo" sizes="35vw" 
+                    srcset= "Images/giant200.jpg 200w,
+                     Images/giant500.jpg 500w,
+                     Images/giant800.jpg 800w,
+                     Images/giant1100.jpg 1100w">
+          <figcaption>Giant</figcaption>
+      </figure>
+       <h1 id="B3">Giant Fastroad SLR 1</h1>
+      <p>The perfect balance of road bike speed and city bike versatility. Built on a lightweight ALUXX SLR aluminum frameset, this flat-bar road bike puts the rider in a comfortable position that’s smooth and efficient. The fast-rolling 700c wheels and innovative D-Fuse seatpost help smooth out rough roads. And with disc brakes and rack mounts, it’s great for commuting, fitness riding and other on-road pursuits.</p>
+          <br>
+            <table id="tourTable">
+            <thead>
+                <tr>
+                    <th colspan="3">Fastroad SLR 1</th>
+                </tr>
+            </thead>
+             <tbody>
+                <tr>
+                    <td><i class="fa fa-bicycle" style="font-size:30px;"></i></td>
+                    <td><label><span>Frame Size:</span>
+                  <select name="selectFrameSize">
+                  <option value="select" disabled selected>Select Frame Size</option>
+                  <option value="S">S (41cm)</option>
+                  <option value="m">M (44cm)</option>
+                  <option value="L">L (48cm)</option>
+                  <option value="XL">XL (54cm)</option>
+                  </select>
+             </label></td>
+                </tr>
+                 <tr>
+                    <td><i class="fa fa-paint-brush"  style="font-size:30px;"></i></td>  
+                    <td><label><span>Color:</span>
+                  <select name="selectColor">
+                  <option value="select" disabled selected>Select Color</option>
+                  <option value="B">Black</option>
+                  <option value="R">Red</option>
+                  <option value="B">Blue</option>
+                  <option value="W">Wite</option>
+                  </select>
+             </label></td>
+                    
+                </tr>
+                
+                 <tr>
+                    <td><i class="fa fa-dollar" style="font-size:30px"></i></td>  
+                    <td>$1,175.00 </td>
+                    
+                </tr>
+                 
+            </tbody>     
+            <tfoot>
+                <tr>
+                   <th colspan="3"><a href="event.html" class="button" >Add To Cart</a> 
+                    </th>
+                </tr>
+            </tfoot>
+        
+        </table>
+    </div>
+      <br>
+       <div class="secondArticle">
+       <figure class="tour2img">
+      <img src= "Images/kids500.jpg" alt="Kids photo" sizes="35vw" 
+                    srcset= "Images/kids200.jpg 200w,
+                     Images/kids500.jpg 500w,
+                     Images/kids800.jpg 800w,
+                     Images/kids1100.jpg 1100w">
+          <figcaption>Kids</figcaption>
+      </figure>
+       <h1 id="B4">Strider Sport Balance Bike</h1>
+      <p>The Strider 14x Sport will give your child confidence and riding skills, opening up a world of adventure at a young age. As two bikes in one, it sets a new standard as the best first pedal bike for children 3-7 and creates the foundation for instant success. After your child has mastered riding the 14x as a balance bike, your little rider is ready to pedal. Quickly attach the included Easy Ride Pedal Kit and watch your child seamlessly transition to riding a pedal bike and accomplish this life-changing milestone!.</p>
+          <br>
+            <table id="tourTable">
+            <thead>
+                <tr>
+                    <th colspan="3">Sport Balance Bike</th>
+                </tr>
+            </thead>
+             <tbody>
+                <tr>
+                    <td><i class="fa fa-bicycle" style="font-size:30px;"></i></td>
+                    <td><label><span>Frame Size:</span>
+                  <select name="selectSize">
+                  <option value="select" disabled selected>Select Size</option>
+                  <option value="12">12 baby Bundle</option>
+                  <option value="12s">12 Sport</option>
+                  <option value="14">14x Sport</option>
+                  </select>
+             </label></td>
+                </tr>
+                 <tr>
+                    <td><i class="fa fa-paint-brush"  style="font-size:30px;"></i></td>  
+                    <td><label><span>Color:</span>
+                  <select name="selectColor">
+                  <option value="select" disabled selected>Select Color</option>
+                  <option value="B">Black</option>
+                  <option value="R">Red</option>
+                  <option value="B">Blue</option>
+                  <option value="W">Green</option>
+                  </select>
+             </label></td>
+                    
+                </tr>
+                
+                 <tr>
+                    <td><i class="fa fa-dollar" style="font-size:30px"></i></td>  
+                    <td>$200.99 </td>
+                    
+                </tr>
+                 
+            </tbody>     
+            <tfoot>
+                <tr>
+                   <th colspan="3"><a href="event.html" class="button" >Add To Cart</a> 
+                    </th>
+                </tr>
+            </tfoot>
+        
+        </table>
+    </div>
+  </div>
+</div>
+
+<footer includefile="footer.html">
+  </footer>
+    
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/include.js"></script>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/weather.js"></script>
+
+
+
+</body>
+</html>
