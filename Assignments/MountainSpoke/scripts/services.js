@@ -1,5 +1,5 @@
 var section = document.querySelector('section');
-var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+var requestURL = 'https://rsilva28us.github.io/Assignments/MountainSpoke/shoplist.json';
 
 var request = new XMLHttpRequest();
 
@@ -10,12 +10,12 @@ var request = new XMLHttpRequest();
     request.send();
 
     request.onload = function() {
-var townInfo = request.response;
-    showInfo(townInfo);
+var shopInfo = request.response;
+    showInfo(shopInfo);
 }
     
 function showInfo(jsonObj) {
-    var info = jsonObj['towns'];
+    var info = jsonObj['tuneUps'];
 
     for (var i = 0; i < info.length; i++) {
         if (i === 2) { 
@@ -32,10 +32,11 @@ function showInfo(jsonObj) {
 
         myH2.textContent = info[i].name;
         myH3.textContent = 'Moto: ' + info[i].motto;
-        myPara1.textContent = 'Year Founded: ' + info[i].yearFounded;
-        myPara2.textContent = 'Current Population: ' + info[i].currentPopulation;
-        myPara3.textContent = 'Average Rainfall: ' + info[i].averageRainfall;
-        myPara4.textContent = 'Events: ';
+        myPara1.textContent = 'Install: ' + info[i].install;
+        myPara2.textContent = 'Rear Install: ' + info[i].instalRear;
+        myPara3.textContent = 'Oil change: ' + info[i].oilChange;
+        myPara4.textContent = 'Full Suspension: ' + info[i].fullsuspension;
+        
 
         var townEvents = info[i].events;
         for (var j = 0; j < townEvents.length; j++) {

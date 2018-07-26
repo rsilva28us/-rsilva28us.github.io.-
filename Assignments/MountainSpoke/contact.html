@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">   
+      <title>Mountain Spoke</title>
+      <meta name="description" content="Retail store and shop located in Bozeman, Montana specializing in bicycles, bicycle parts, bicycle repair, and tours. Sponsors and organizes tours in the area to serious bicyclists from around the world, Mountain Spoke">
+    
+     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+     <link rel="stylesheet" href="styles/medium.css">
+     <link rel="stylesheet" href="styles/large.css">
+     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+</head>
+<body>    
+
+  <header includefile="header.html">
+        
+       </header>
+
+
+<nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="tours.html">Tours</a></li>
+        <li><a href="event.html">Events</a></li>
+        <li><a href="shop.html">Shop</a></li>
+    	<li><a href="service.html">Service</a></li>
+    	<li class="active"><a href="contact.html">Contact</a></li>
+    </ul>
+    
+    </nav>
+    <div class="container">
+        <figure class="mainPhoto">
+          <img src= "Images/toursimg500.jpg" alt="contact photo" sizes="50vw" 
+                    srcset= "Images/toursimg200.jpg 200w,
+                     Images/toursimg500.jpg 500w,
+                     Images/toursimg800.jpg 800w,
+                     Images/toursimg1100.jpg 1100w">
+            </figure>
+       
+<div class="row">
+  
+    <!-- MAIN -->
+  <div class="main">
+      <h1>Contact</h1>
+     <form method="get" action="thanks.html" >
+         <fieldset>
+            <legend> Contact Us </legend>
+             
+            <label><span>Full Name*:</span> <input type="text" name="fname" placeholder="Full Name" pattern="[A-z\s]{5,}" required autocomplete="off"></label>
+             
+            <label><span>Email:</span><input type="email" name="email" placeholder="youremail@mail.com" autocomplete="off"></label>
+             
+            <label><span>Phone*:</span><input type="tel" name="phone" required autocomplete="off"></label>
+             
+            
+        <label ><span>Additional Information</span>
+                 <textarea name="additionalinformation"></textarea>
+        </label>
+             
+        <input type="submit" value="Submit" class="submitBtn">
+             
+          </fieldset>
+         
+                
+</form>
+    </div>
+    
+  <!--  SIDE  -->
+  <div class="side">
+      
+        <div class="Shopside">
+        <figure>
+      <img src= "Images/map500.jpg" alt="map photo">
+          <figcaption>contact</figcaption>
+            
+      </figure>  
+       <h2>If you have any other questions, please contact us at:</h2>
+            <p>Mountain Spoke</p>
+            <p>1530 E Main St Bozeman, MT 59715</p>
+
+            <p>Phone: 1-800-526-4538</p>
+        
+
+            <p>Hours of Operation:
+            Monday - Saturday, 9 am-9 pm
+            Sunday, 8 am-8 pm</p>
+      
+      </div>
+      </div>
+
+</div>
+    </div>
+
+<footer includefile="footer.html">
+  </footer>
+    
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/include.js"></script>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/events.js"></script>
+
+
+
+</body>
+</html>
