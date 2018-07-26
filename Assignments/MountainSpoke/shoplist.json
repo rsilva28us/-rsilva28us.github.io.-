@@ -1,0 +1,37 @@
+{
+  "tuneUps" : [
+ {
+    "name": "suspension",
+    "motto": "Prices per Labor Only.",
+    "install": "$45.00",
+    "installRear": "$30.00",
+    "oilChange": "$30.00",
+    "fullsuspension": "$50.00",
+  },
+  {
+    "name": "tuneUps",
+    "motto": "Prices per Labor Only.",
+    "tuneUp": "$80.00",
+    "tuneUpPlus": "$100.00",
+    "superTuneUp": "$140.00",
+    "buildBike": "$170.00",
+    "buildProBike": "$190.00",
+  },
+  {
+    "name": "wheels",
+    "motto": "Prices per Labor Only.",
+    "replacetube": "$8.00",
+    "mountingANewTire": "$15.00",
+    "buildWheel": "$40.00",
+    "RebuildAWheel": "$35.00",
+  },
+  {
+    "name": "brakes",
+    "motto": "Prices per Labor Only.",
+    "installBreak": "$25.00",
+    "adjustBreak": "$15.00",
+    "installCable": "$20.00",
+    "installHydraulicBreak": "$40.00",
+  }
+ ]
+}
