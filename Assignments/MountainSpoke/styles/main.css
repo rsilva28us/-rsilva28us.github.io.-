@@ -39,6 +39,11 @@ p {
     letter-spacing: 0.1em;
     
 }
+header .subheading { 
+    display:flex;
+    justify-content: center;
+  
+}
 
 /* Style the navigation  */
 
