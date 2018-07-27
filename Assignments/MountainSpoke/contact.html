@@ -13,6 +13,7 @@
      <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>    
 
@@ -22,8 +23,8 @@
 
 
 <nav class="clearfix">
-    <button onclick="toggleMenu()">&#9776;</button>
-      <ul id="primaryNav" class="hide">
+       <button onclick="toggleMenu()">&#9776;</button>
+   <ul id="mainmenu" class="hide " >
     	<li><a href="index.html">Home</a></li>
     	<li><a href="tours.html">Tours</a></li>
         <li><a href="event.html">Events</a></li>
@@ -72,16 +73,13 @@
     
   <!--  SIDE  -->
   <div class="side">
-      
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="350" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=3950%20Valley%20Commons%20DrBozeman%2C%20MT%2059718&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="1" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+      </div>
         <div class="Shopside">
-        <figure>
-      <img src= "Images/map500.jpg" alt="map photo">
-          <figcaption>contact</figcaption>
-            
-      </figure>  
+    
        <h2>If you have any other questions, please contact us at:</h2>
             <p>Mountain Spoke</p>
-            <p>1530 E Main St Bozeman, MT 59715</p>
+            <p>3950 Valley Commons DrBozeman, MT 59718</p>
 
             <p>Phone: 1-800-526-4538</p>
         
@@ -89,6 +87,7 @@
             <p>Hours of Operation:
             Monday - Saturday, 9 am-9 pm
             Sunday, 8 am-8 pm</p>
+            
       
       </div>
       </div>
@@ -103,6 +102,7 @@
 <script src="scripts/include.js"></script>
 <script src="scripts/currentdate.js"></script>
 <script src="scripts/events.js"></script>
+<script src="scripts/mainmenu.js"></script>
 
 
 

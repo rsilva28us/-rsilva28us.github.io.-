@@ -13,6 +13,7 @@
      <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>    
 
@@ -22,8 +23,8 @@
 
 
 <nav class="clearfix">
-    <button onclick="toggleMenu()">&#9776;</button>
-      <ul id="primaryNav" class="hide">
+       <button onclick="toggleMenu()">&#9776;</button>
+   <ul id="mainmenu" class="hide " >
     	<li><a href="index.html">Home</a></li>
     	<li><a href="tours.html">Tours</a></li>
         <li class="active"><a href="event.html">Events</a></li>
@@ -45,30 +46,6 @@
 <div class="row">
     <!--  SIDE  -->
   <div class="side">
-      
-      <h2>Events</h2>
-      <h5>This Month</h5>
-        <div class="Shopside">
-        <figure>
-      <img src= "Images/bicycles-bikes500.jpg" alt="Shop photo">
-          <figcaption>World Bicycle Day</figcaption>
-            
-      </figure>  
-           <figure>
-      <img src= "Images/shop500.jpg" alt="Shop2 photo">
-          <figcaption>New Shop</figcaption>
-      </figure> 
-     
-      <figure>
-      <img src= "Images/race500.jpg" alt="Shop3 photo">
-          <figcaption>Race at the Mountain</figcaption>
-      </figure>
-      
-      </div>
-      </div>
-
-    <!-- MAIN -->
-  <div class="main">
       <h1>Registration for a Tour or Event</h1>
      <form method="get" action="thanks.html" >
          <fieldset>
@@ -76,15 +53,15 @@
              
             <label><span>Full Name*:</span> <input type="text" name="fname" placeholder="Full Name" pattern="[A-z\s]{5,}" required autocomplete="off"></label>
              
-            <label><span>Email:</span><input type="email" name="email" placeholder="youremail@mail.com" autocomplete="off"></label>
+            <label><span>Email:</span><input type="email" name="email" placeholder="youremail@mail.com" required autocomplete="off"></label>
              
-            <label><span>Phone*:</span><input type="tel" name="phone" required autocomplete="off"></label>
+            <label><span>Phone*:</span><input type="tel" name="phone" placeholder="000-000-0000" required autocomplete="off"></label>
              
             
              
              <label><span>State:</span>
                  <select name="state">
-                  <option value="select" disabled selected>Select your option</option>
+                  <option value="select" disabled selected>Select your State</option>
 <option value="AL">Alabama (AL)</option>
 	<option value="AK">Alaska (AK)</option>
 	<option value="AZ">Arizona (AZ)</option>
@@ -140,7 +117,7 @@
                 
              </label>
              
-            <label><span>Date of birth * :</span> <input type="number" name="zip" required autocomplete="off"></label>
+              <label><span> Date of birth:</span><input type="date"  name="date" required autocomplete="off"></label> 
              
           </fieldset>
          
@@ -149,15 +126,17 @@
              
                 <label><span>Select Date:</span><input type="date"  name="date"></label> 
                 
-                <label><span>Select Event:</span><input type="text"  name="event" list="selectevent">
+                <label><span>Select Event:</span><input type="text"  name="event" placeholder="Event" list="selectevent">
                     <datalist id="selectevent">
                     <option value="None"></option>
                     <option value="World Bicycle Day"></option>
                     <option value="New Shop"></option>
-                    <option value="Race at the Mountain"></option>
+                    <option value="Race at the Mountain">
+                    </option>
+                    <option value="Cycle the Continental Divide"></option>
                     </datalist>
              </label>
-             <label><span>Select Tour:</span><input type="text"  name="tour" list="selecttour">
+             <label><span>Select Tour:</span><input type="text"  name="tour" list="selecttour" placeholder="Tour">
                     <datalist id="selecttour">
                      <option value="None"></option>
                     <option value="Mountain trail"></option>
@@ -174,16 +153,16 @@
             
               <label><span>Equipment:</span>
                   <select name="selectalternative">
-                  <option value="select" disabled selected>Select your option</option>
+                  <option value="select" disabled selected>Select your Equipment:</option>
                   <option value="franklin">Rent</option>
                   <option value="greenville">Buy</option>
                   <option value="springfield">Own</option>
                   </select>
              </label>
               <span>Special accommodations</span>
-               <label><input type="radio" name="danger" value="yes">Yes</label>
-               <label><input type="radio" name="danger" value="maybe">Maybe</label>
-               <label><input type="radio" name="danger" value="no">No</label>
+               <label><input type="radio" name="danger" value="yes"> Yes</label>
+               <label><input type="radio" name="danger" value="maybe"> Maybe</label>
+               <label><input type="radio" name="danger" value="no"> No</label>
         
              
            <label ><span>Additional Information</span>
@@ -195,7 +174,117 @@
           <input type="submit" value="Submit" class="submitBtn">
         
                 
-</form>
+      </form>
+      </div>
+
+    <!-- MAIN -->
+  <div class="main">
+     <h1>The Great Divide Route</h1>
+
+      
+         <div class="firstArticle">
+      <figure class="continentalimg">
+      <img src= "Images/bikes-coast500.jpg" alt="World Bicycle Day photo" sizes="50vw" 
+                    srcset= "Images/bikes-coast200.jpg 200w,
+                     Images/bikes-coast500.jpg 500w,
+                     Images/bikes-coast800.jpg 800w,
+                     Images/bikes-coast1100.jpg 1100w">
+        <figcaption>The Continental Divide</figcaption>
+      </figure>
+      <h1>Cycle the Continental Divide</h1>
+      <p>The Great Divide Route is the longest cycling route in the world. It is recognized for having long dirt roads and trails that begins in Alberta and British Columbia, Canada and continues in the United States from Montana, Idaho, Wyoming, Colorado to finish in New Mexico.
+On our route, we will ride the journey of Montana in 20 amazing days full of adventure and great challenges.</p>
+             <p>DATE: JUNE 9, 2017 TIME: 8:00 AM</p>
+          <br>
+            <table id="tourTable">
+            <thead>
+                <tr>
+                    <th colspan="3">Tour Continental Divide</th>
+                </tr>
+            </thead>
+             <tbody>
+                <tr>
+                    <td><i class="fa fa-heartbeat" style="font-size:30px;"></i></td>
+                    <td> Fitness Level 9 </td>
+                </tr>
+                 <tr>
+                    <td><i class= "fa fa-bicycle"  style="font-size:30px;"></i></td>  
+                    <td> Skills Pro</td>
+                    
+                </tr>
+                <tr>
+                    <td><i class= "fa fa-clock-o" style="font-size:30px;"></i></td>  
+                    <td>  20 Days </td>
+                   
+                </tr>
+                 <tr>
+                    <td><i class="fa fa-dollar" style="font-size:30px"></i></td>  
+                    <td>$3,000.00</td>
+                    
+                </tr>
+                 
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3"><a href="event.html" class="button" >Register here !</a> 
+                    </th>  
+                </tr> 
+            </tfoot>
+        </table>
+         
+          </div>
+      <br>
+       <div class="firstArticle">
+      <figure class="dayimg">
+      <img src= "Images/bicycles-bikes500.jpg" alt="World Bicycle Day photo" sizes="50vw" 
+                    srcset= "Images/bicycles-bikes200.jpg 200w,
+                     Images/bicycles-bikes500.jpg 500w,
+                     Images/bicycles-bikes800.jpg 800w,
+                     Images/bicycles-bikes1100.jpg 1100w">
+        <figcaption>World Bicycle Day</figcaption>
+      </figure>
+      <h1>World Bicycle Day</h1>
+      <p>This month will be celebrated the World Bicycle Day, means of transport used by 7% of the population and that means a saving of two million dollars annually for its users.
+
+In Bozeman it will be held throughout the state with different activities such as the street ride and perform a BMX demonstration, raffle of accessories and courses of rights and duties of the cyclist.</p>
+          <br>
+            <table id="tourTable">
+            <thead>
+                <tr>
+                    <th colspan="3">Mountain Trail</th>
+                </tr>
+            </thead>
+             <tbody>
+                <tr>
+                    <td><i class="fa fa-heartbeat" style="font-size:30px;"></i></td>
+                    <td> Fitness Level 2 </td>
+                </tr>
+                 <tr>
+                    <td><i class= "fa fa-bicycle"  style="font-size:30px;"></i></td>  
+                    <td> Skills Novice</td>
+                    
+                </tr>
+                <tr>
+                    <td><i class= "fa fa-clock-o" style="font-size:30px;"></i></td>  
+                    <td>  3 hours (approx.)</td>
+                   
+                </tr>
+                 <tr>
+                    <td><i class="fa fa-dollar" style="font-size:30px"></i></td>  
+                    <td>$40.00</td>
+                    
+                </tr>
+                 
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3"><a href="event.html" class="button" >Register here !</a> 
+                    </th>  
+                </tr> 
+            </tfoot>
+        </table>
+         
+          </div>
     </div>
 
 </div>
@@ -208,6 +297,7 @@
 <script src="scripts/include.js"></script>
 <script src="scripts/currentdate.js"></script>
 <script src="scripts/events.js"></script>
+<script src="scripts/mainmenu.js"></script>
 
 
 
