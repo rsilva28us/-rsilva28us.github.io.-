@@ -181,7 +181,6 @@ nav ul.hide {display: none;}
      padding: 30px 20px;
     text-align: center;
 }
-}
 .firstArticle{
     padding: 10px 20px;
     flex-direction: column;
@@ -243,16 +242,16 @@ div.Shopside  figure {
 }
 
 
-div. Shopside figure figcaption {
+.Shopside figure figcaption {
             text-align: center;
             font-size: 1.0rem;
 }
-	div. Shopside figure:hover {
+.Shopside figure:hover {
 		box-shadow: 5px 10px 10px gray;
         opacity: .5;
         border-radius: 5px 50px
 }
-div.Shopside figure img{ width: 100%;
+.shopside figure img{ width: 100%;
     border-radius: 5px 50px;
 }
 
